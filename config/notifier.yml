@@ -1,0 +1,22 @@
+generic: &generic
+  level:          "INFO"
+  email:          "errors@zwartopwit.be"
+  from:           "noreply@zwartopwit.be"
+  subject:        "Estimates Error"
+  smtp:           "mail.bulckens.com"
+  port:           "465"
+  username:       "errors@zwartopwit.be"
+  password:       "[D>pTF93]#Jwb33ER9"
+  encryption:     "ssl"
+
+development:
+  <<: *generic
+  level:         "DEBUG"
+
+test:
+  <<: *generic
+  level:         "DEBUG"
+
+production:
+  <<: *generic
+  level:         "ERROR"

@@ -1,0 +1,9 @@
+suites:
+  default:
+    namespace: Estimates
+    src_path: %paths.config%/src
+
+formatter.name: pretty
+
+extensions:
+  Karriere\PhpSpecMatchers\Extension: ~
