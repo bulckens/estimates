@@ -1,0 +1,11 @@
+generic: &generic
+  lifespan:  3600
+
+development:
+  <<: *generic
+
+test:
+  <<: *generic
+
+production:
+  <<: *generic

@@ -1,0 +1,35 @@
+{
+    "repositories": [
+        {   "type": "vcs",
+            "url": "git@github.com:bulckens/helpers.git",
+            "no-api": true
+        },
+        {   "type": "vcs",
+            "url": "git@github.com:bulckens/api-tools.git",
+            "no-api": true
+        },
+        {   "type": "vcs",
+            "url": "git@github.com:bulckens/app-tools.git",
+            "no-api": true
+        },
+        {   "type": "vcs",
+            "url": "git@github.com:bulckens/cli-tools.git",
+            "no-api": true
+        }
+    ],
+    "require": {
+        "bulckens/helpers": "dev-master",
+        "bulckens/api-tools": "dev-master",
+        "bulckens/app-tools": "dev-master",
+        "bulckens/cli-tools": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.2",
+        "karriere/phpspec-matchers": "^1.1"
+    }
+}

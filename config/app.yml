@@ -1,0 +1,14 @@
+generic: &generic
+  modules:
+    - notifier
+    - router
+    - view
+
+development:
+  <<: *generic
+
+test:
+  <<: *generic
+
+production:
+  <<: *generic

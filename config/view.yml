@@ -1,0 +1,13 @@
+generic: &generic
+  debug: true
+  root:  src/Estimates/Views
+
+test:
+  <<: *generic
+
+development:
+  <<: *generic
+
+production:
+  <<: *generic
+  debug: false

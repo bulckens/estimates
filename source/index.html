@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://ui.zwartopwit.be/assets/zow_v4/stylesheets/stylesheet_v4_smalleheader.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div class="pure-skin-zow allesgotham zow-contentpage">
+        <div class="zow-units">
+            <h1>Offerte aanvragen</h1>
+            <div class="zow-unit zow-1-1 stappen">
+                <div class="current-stap" data-position=0></div>
+                <div class="stap-nummer tooltip finished">1
+                    <span class="tooltiptext">Gegevens</span>
+                </div>
+                <div class="stap-nummer tooltip">2
+                    <span class="tooltiptext">Oplage</span>
+                </div>
+                <div class="stap-nummer tooltip">3
+                    <span class="tooltiptext">Formaat en omvang</span>
+                </div>
+                <div class="stap-nummer tooltip">4
+                    <span class="tooltiptext">Papier en bedrukking</span>
+                </div>
+                <div class="stap-nummer tooltip">5
+                    <span class="tooltiptext">Afwerking en personalisatie</span>
+                </div>
+                <div class="stap-nummer tooltip">6
+                    <span class="tooltiptext">Aflevermethode</span>
+                </div>
+                <div class="stap-nummer tooltip">7
+                    <span class="tooltiptext">Bijlage en algemene opmerkingen</span>
+                </div>
+            </div>
+            <form action="post" class="pure-form" id="offerteaanvraag">
+                <section id="gegevens">
+                    <fieldset class="submission">
+                        <legend>Gegevens</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <p class="feedback-gegevens">Velden met * zijn verplicht in te vullen</p>
+                        <div class="space-between">
+                            <div class="zow-unit zow-1-2">
+                                <label for="persoon">Je bestelt als</label>
+                                <select name="estimate[details][organization]" id="persoon" class="zow-unit zow-1-1">
+                      <option value="" selected disabled>Kies</option>
+                      <option value="bedrijf">Bedrijf - organisatie</option>
+                      <option value="particulier">Particulier</option>
+                  </select>
+                            </div>
+                            <div class="zow-unit zow-1-2">
+                                <label for="email">Email*</label>
+                                <input type="email" class="zow-unit zow-1-1" required id="email" name="estimate[details][email]">
+                            </div>
+                        </div>
+                        <div class="gegevens-bedrijf">
+                            <div class="space-between">
+                                <div class="zow-unit zow-1-2">
+                                    <label for="btw_plichtig">BTW</label>
+                                    <select name="estimate[details][vat_liable]" id="btw_plichtig" class="zow-unit zow-1-1">
+                            <option value="" selected disabled>kies</option>
+                            <option value="heeft een BTW-nummer">Mijn BTW-nummer is:</option>
+                            <option value="heeft geen BTW-nummer">Ik heb geen BTW-nummer</option>
+                            <option value="niet BTW-plichtig">Ik ben niet BTW plichtig</option>
+                        </select>
+                                </div>
+                                <div class="zow-unit zow-1-2">
+                                    <label for="btw-nummer">BTW-nummer (met landcode)</label>
+                                    <input type="text" class="zow-unit zow-1-1" disabled id="btw_input" name="estimate[details][vat_number]">
+                                </div>
+                            </div>
+                            <div class="space-between">
+                                <div class="zow-unit zow-1-2">
+                                    <label for="">Naam van bedrijf</label>
+                                    <input type="text" class="zow-unit zow-1-1" name="estimate[details][company]">
+                                </div>
+                                <div class="zow-unit zow-1-2">
+                                    <label for="">Rechtsvorm</label>
+                                    <input type="text" class="zow-unit zow-1-1" name="estimate[details][organization_type]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Voor- en achternaam</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[details][name]">
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Land</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[details][country]">
+                        </div>
+                        <div class="zow-unit zow-5-6">
+                            <label for="">Straat</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[details][street]">
+                        </div>
+                        <div class="zow-unit zow-1-6">
+                            <label for="">Nr</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[details][number]">
+                        </div>
+                        <div class="zow-unit zow-1-6">
+                            <label for="">Postcode</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[details][postalcode]">
+                        </div>
+                        <div class="zow-unit zow-5-6">
+                            <div class="space-between">
+                                <div class="zow-unit zow-1-2">
+                                    <label for="">Plaats</label>
+                                    <input type="text" class="zow-unit zow-1-1" name="estimate[details][place]">
+                                </div>
+                                <div class="zow-unit zow-1-2">
+                                    <label for="">Telefoonnummer*</label>
+                                    <input type="tel" class="zow-unit zow-1-1" required name="estimate[details][telephone]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-4"></div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="oplage">
+                    <fieldset class="submission">
+                        <legend>Oplage</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Oplage</label>
+                            <div class="numberfield">
+                                <div class="numberfield-button button-minus">
+                                    <img src="images/minus-sign.svg" alt="">
+                                </div>
+                                <div class="numberfield-button button-plus">
+                                    <img src="images/plus-sign.svg" alt="">
+                                </div>
+                                <input type="number" min="0" class="zow-unit zow-1-1" name="estimate[edition][amount]">
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <div class="flex-center">
+                                <input type="hidden" class="staffel" value="0" name="estimate[edition][scale]">
+                                <input type="checkbox" class="staffel" id="staffel" value="1" name="estimate[edition][scale]">
+                                <label for="staffel">Ik wil een offerte voor meerdere oplages</label>
+                            </div>
+                            <div class="oplage-staffel">
+                                <label for="">Oplage aantal 1</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_1]">
+                                <label for="">Oplage aantal 2</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_2]">
+                                <label for="">Oplage aantal 3</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_3]">
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <label for="aantal_versies_input">Aantal versies</label>
+                            <div class="numberfield">
+                                <div class="numberfield-button button-minus">
+                                    <img src="images/minus-sign.svg" alt="">
+                                </div>
+                                <div class="numberfield-button button-plus">
+                                    <img src="images/plus-sign.svg" alt="">
+                                </div>
+                                <input type="number" min="0" class="zow-unit zow-1-1" id="aantal_versies_input" name="estimate[edition][versions]">
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <div class="flex-center oplage-verdeling">
+                                <div>
+                                    <input type="radio" id="gelijke_verdeling" value="gelijke verdeling" name="estimate[edition][devided]">
+                                    <label for="gelijke_verdeling">Gelijke verdeling</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="ongelijke_verdeling" value="ongelijke verdeling" name="estimate[edition][devided]">
+                                    <label for="ongelijke_verdeling">Ongelijke verdeling</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-1">
+                            <label for="">Verduidelijking over de verdeling</label>
+                            <textarea class="zow-unit zow-1-1" name="estimate[edition][comment]"></textarea>
+                        </div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="formaat_omvang">
+                    <fieldset class="submission">
+                        <legend>Formaat</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Formaat (in mm)</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[deminsions][format]">
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Open formaat (indien van toepassing)</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][fromat_open]">
+                        </div>
+                    </div>
+                    <fieldset class="submission">
+                        <legend>Omvang</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <label for="omvang">Omvang</label>
+                            <select name="estimate[dimensions][size]" id="omvang" class="zow-unit zow-1-1">
+                            <option value="enkel">Enkel (vb. flyer)</option>
+                            <option value="gevouwen">Gevouwen (meerluik)</option>
+                            <option value="boekje">Boekje</option>
+                        </select>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <div class="omvang-aantal-luiken">
+                                <label for="">Aantal luiken</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][shutters]">
+                            </div>
+                            <div class="omvang-cover">
+                                <label for="">Cover</label>
+                                <select name="estimate[dimensions][cover]" id="selfcover" class="zow-unit zow-1-1">
+                            <option value="selfcover">Selfcover</option>
+                            <option value="cover en binnenwerk">Cover + binnenwerk</option>
+                        </select>
+                                <div class="omvang-cover-binnenwerk">
+                                    <label for="">Aantal pagina's binnenwerk</label>
+                                    <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][pages]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-1">
+                            <label for="">Opmerking</label>
+                            <textarea class="zow-unit zow-1-1" name="estimate[dimensions][comment]"></textarea>
+                        </div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="papiersoort_bedrukking">
+                    <fieldset class="submission">
+                        <legend>Papier</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <div class="papier-soort">
+                                <label for="">Papiersoort</label>
+                                <select name="estimate[material][paper]" id="" class="zow-unit zow-1-1">
+        <option value="" disabled selected>Selecteer uw papiersoort</option>
+        <option value="Maco silk light">Maco silk light</option>
+        <option value="Maco silk medium">Maco silk medium</option>
+        <option value="Maco silk normal">Maco silk normal</option>
+        <option value="Maco silk heavy">Maco silk heavy</option>
+        <option value="Maco gloss light">Maco gloss light</option>
+        <option value="Maco silk medium digital">Maco silk medium digital</option>
+        <option value="Maco silk normal digital">Maco silk normal digital</option>
+        <option value="Maco silk heavy digital">Maco silk heavy digital</option>
+        <option value="Maco silk normal + glossy">Maco silk normal + glossy</option>
+        <option value="Maco silk normal + mat">Maco silk normal + mat</option>
+        <option value="Eco silk light">Eco silk light</option>
+        <option value="Eco silk heavy">Eco silk heavy</option>
+        <option value="Eco silk light digital">Eco silk light digital</option>
+        <option value="Eco silk heavy digital">Eco silk heavy digital</option>
+        <option value="Prestige offset medium">Prestige offset medium</option>
+        <option value="Prestige offset heavy">Prestige offset heavy</option>
+        <option value="Biotop medium">Biotop medium</option>
+        <option value="Biotop heavy">Biotop heavy</option>
+        <option value="LUX (glossy,mat,velvet,mat spot-UV)">LUX (glossy,mat,velvet,mat spot-UV)</option>
+        <option value="Postcard (glossy,mat,velvet,mat spot-UV)">Postcard (glossy,mat,velvet,mat spot-UV)</option>
+        <option value="Postcard digital">Postcard digital</option>
+        <option value="Laser (prestige,eco-cyclus,biotop)">Laser (prestige,eco-cyclus,biotop)</option>
+        <option value="eigen papiersoort">Eigen papiersoort</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="papier-binnenwerk-cover space-between">
+                            <div class="zow-unit zow-1-2">
+                                <label for="">Papiersoort binnenwerk</label>
+                                <select name="estimate[material][inside]" id="" class="zow-unit zow-1-1">
+                            <option value="" disabled selected>Selecteer de papiersoort van het binnenwerk</option>
+                                <option value="Maco gloss light">Maco gloss light</option>
+                                <option value="Maco silk light">Maco silk light</option>
+                                <option value="Maco silk medium">Maco silk medium</option>
+                                <option value="Maco silk normal">Maco silk normal</option>
+                                <option value="Eco-cyclus silk light">Eco-cyclus silk light</option>
+                                <option value="Eco-cyclus silk heavy">Eco-cyclus silk heavy</option>
+                                <option value="Prestige offset medium">Prestige offset medium</option>
+                                <option value="Lux mat">Lux mat</option>
+                                <option value="Lux glossy">Lux glossy</option>
+                            </select>
+                            </div>
+                            <div class="zow-unit zow-1-2 papier-binnenwerk-cover-cover">
+                                <label for="">Papiersoort cover</label>
+                                <select name="estimate[material][cover]" id="" class="zow-unit zow-1-1">
+                                <option value="" disabled selected>Selecteer de papiersoort van de cover</option>
+                                <option value="Maco silk + GLOSS laminaat">Maco silk + GLOSS laminaat</option>
+                                <option value="Maco silk + MAT laminaat">Maco silk + MAT laminaat</option>
+                                <option value="Maco silk medium">Maco silk medium</option>
+                                <option value="">Maco silk normal</option>
+                                <option value="Maco silk normal">Eco-cyclus silk heavy</option>
+                                <option value="Prestige offset heavy">Prestige offset heavy</option>
+                                <option value="Postcard mat">Postcard mat</option>
+                                <option value="Postcard glossy">Postcard glossy</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-1">
+                            <label for="">Opmerking</label>
+                            <textarea class="zow-unit zow-1-1" name="estimate[material][comment]"></textarea>
+                        </div>
+                    </div>
+                    <fieldset class="submission">
+                        <legend>Bedrukking</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Kleur</label>
+                            <select name="estimate[material][color]" id="" class="zow-unit zow-1-1">
+                               <option value="" selected disabled>Selecteer de kleur van uw drukwerk</option>
+                                <option value="quadri">Quadri</option>
+                                <option value="zwart-wit">Zwart-wit</option>
+                            </select>
+                        </div>
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Recto-verso</label>
+                            <select name="estimate[material][print]" id="" class="zow-unit zow-1-1">
+                               <option value="" selected disabled> Selecteer de bedrukking van uw drukwerk</option>
+                                <option value="recto">Recto</option>
+                                <option value="recto-verso">Recto-verso</option>
+                            </select>
+                        </div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="afwerking_personalisatie">
+                    <fieldset class="submission">
+                        <legend>Afwerking</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Kies de gewenste afwerking:</label>
+
+                            <label for="schoonsnijden" class="check-label">
+                                <input type="hidden" name="estimate[finish][clean_cut]" value="0">
+                                <input type="checkbox" name="estimate[finish][clean_cut]" id="schoonsnijden" value="1">Schoonsnijden
+                            </label>
+                            <label for="vouwen" class="check-label">
+                                <input type="hidden" name="estimate[finish][fold]" value="0">
+                                <input type="checkbox" name="estimate[finish][fold]" id="vouwen" value="1">Vouwen
+                            </label>
+                            <label for="nieten" class="check-label">
+                                <input type="hidden" name="estimate[finish][staple]" value="0">
+                                <input type="checkbox" name="estimate[finish][staple]" id="nieten" value="1">Nieten
+                            </label>
+                            <label for="uitkappen" class="check-label">
+                                <input type="hidden" name="estimate[finish][diecut]" value="0">
+                                <input type="checkbox" name="estimate[finish][diecut]" id="uitkappen" value="1">Uitkappen
+                            </label>
+                            <label for="garenloos_brocheren" class="check-label">
+                                <input type="hidden" name="estimate[finish][binding]" value="0">
+                                <input type="checkbox" name="estimate[finish][binding]" id="garenloos_brocheren" value="1">Garenloos brocheren
+                            </label>
+                            <label for="wire_o" class="check-label">
+                                <input type="hidden" name="estimate[finish][wire_o]" value="0">
+                                <input type="checkbox" name="estimate[finish][wire_o]" id="wire_o" value="1">Wire-o
+                            </label>
+                            <div class="zow-unit zow-1-1">
+                                <label for="">Andere:</label>
+                                <textarea class="zow-unit zow-1-1" name="estimate[finish][comment_finish]"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="zow-unit zow-1-2">
+                            <label for="">Kies de gewenste verdeling:</label>
+
+                            <label for="plastificatie" class="check-label">
+                                <input type="hidden" name="estimate[finish][plasticizing]" value="0">
+                                <input type="checkbox" id="plastificatie" name="estimate[finish][plasticizing]" value="1">Plastificatie
+                            </label>
+                            <label for="spot_uv" class="check-label">
+                                <input type="hidden" name="estimate[finish][spot_uv]" value="0">
+                                <input type="checkbox" id="spot_uv" name="estimate[finish][spot_uv]" value="1">Spot-UV
+                            </label>
+                            <label for="foliedruk" class="check-label">
+                                <input type="hidden" name="estimate[finish][foil]" value="0">
+                                <input type="checkbox" id="foliedruk" name="estimate[finish][foil]" value="1">Foliedruk
+                            </label>
+                            <label for="blinddruk" class="check-label">
+                                <input type="hidden" name="estimate[finish][embossing]" value="0">
+                                <input type="checkbox" id="blinddruk" name="estimate[finish][embossing]" value="1">Blinddruk
+                            </label>
+                            <div class="zow-unit zow-1-1">
+                                <label for="">Andere:</label>
+                                <textarea class="zow-unit zow-1-1" name="estimate[finish][comment_distribution]"></textarea>
+                            </div>
+                        </div>
+                        <div class="zow-unit zow-1-1">
+                            <label for="">Verpakking (dozen, krimp,...)</label>
+                            <input type="text" class="zow-unit zow-1-1" name="estimate[finish][comment_packaging]">
+                        </div>
+                    </div>
+                    <fieldset class="submission">
+                        <legend>Personalisatie</legend>
+                    </fieldset>
+                    <div class="zow-unit zow-1-1 personalisatie">
+                        <div class="flex-center">
+                            <input type="hidden" value="0" name="estimate[finish][personalize]">
+                            <input type="checkbox" value="1" id="personalisatie" name="estimate[finish][personalize]">
+                            <label for="personalisatie">Personalisatie</label>
+                        </div>
+                    </div>
+                    <div class="zow-unit zow-1-1">
+                        <label for="">Opmerking</label>
+                        <textarea class="zow-unit zow-1-1" name="[estimate][finish][comment_personalize]"></textarea>
+                    </div>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="aflevermethode">
+                    <fieldset class="submission">
+                        <legend>Aflevermethode</legend>
+                    </fieldset>
+                    <div class="zow-unit zow-1-2">
+                        <label for="">Kies de gewenste aflevermethode</label>
+                        <div class="zow-aside-usp zow-banner">
+                            <label for="afhalen" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+                            <input type="radio" id="afhalen" name="estimate[delivery][type]" value="afhalen">Ik haal mijn drukwerk gratis af in één van de ZwartOpWit-servicepunten.
+                            <img src="images/servicepin.png" alt="" class="zow_aside_usp_mappin">
+                        </div>
+                        <div class="zow-aside-usp zow-banner">
+                            <label for="facturatieadres" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+                            <input type="radio" id="facturatieadres" name="estimate[delivery][type]" value="facturatieadres">Ik wil mijn drukwerk laten leveren op mijn facturatieadres
+                            <img src="images/truck.png" alt="" class="zow_aside_usp_mappin">
+                        </div>
+                        <div class="zow-aside-usp zow-banner">
+                            <label for="ander" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+                            <input type="radio" id="ander" name="estimate[delivery][type]" value="ander adres">Ik wil mijn drukwerk laten leveren op een ander adres.
+                            <img src="images/truck-2.png" alt="" class="zow_aside_usp_mappin">
+                        </div>
+                        <div class="zow-units ander-adres">
+                            <div class="zow-unit zow-5-6">
+                                <label for="">Straat</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][street]">
+                            </div>
+                            <div class="zow-unit zow-1-6">
+                                <label for="">Nr</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][number]">
+                            </div>
+                            <div class="zow-unit zow-1-6">
+                                <label for="">Postcode</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][postalcode]">
+                            </div>
+                            <div class="zow-unit zow-5-6">
+                                <label for="">Plaats</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][place]">
+                            </div>
+                            <div class="zow-unit zow-1-1">
+                                <label for="">Land</label>
+                                <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][country]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                    </div>
+                </section>
+                <section id="bijlage_algemeneopmerkingen">
+                    <fieldset class="submission">
+                        <legend>Bijlage</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="upload-area zow-unit zow-1-1">
+                            <!--<input type="file" class="upload-file" name="estimate[attachement][files][]" id="file" data-multiple-caption="{count} bestanden geselecteerd" multiple>
+                            <label for="file" class="file-label">Upload je bestand <span class="has-dragndrop"> of sleep het hier naartoe</span></label>-->
+                        </div>
+                    </div>
+                    <fieldset class="submission">
+                        <legend>Algemene opmerkingen</legend>
+                    </fieldset>
+                    <div class="zow-units">
+                        <div class="zow-unit zow-1-1">
+                            <label for="">Opmerking</label>
+                            <textarea class="zow-unit zow-1-1" name="estimate[attachement][comment]"></textarea>
+                        </div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+                        </div>
+                        <div class="zow-unit zow-2-4"></div>
+                        <div class="zow-unit zow-1-4">
+                            <input type="submit" value="verzenden" class="pure-button zow-1-1">
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="javascripts/dropzone.js"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>
