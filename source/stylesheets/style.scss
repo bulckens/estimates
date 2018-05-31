@@ -2,339 +2,339 @@
 @import 'colors';
 
 div.stappen {
+  position: relative;
+  margin-top: 0.8928571429%;
+  .stap-nummer {
+    display: inline-block;
+    background: radial-gradient($softer_grey 50%, $white 50%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0px 20px;
+    text-align: center;
+    line-height: 32.5px;
     position: relative;
-    margin-top: 0.8928571429%;
-    .stap-nummer {
-        display: inline-block;
-        background: radial-gradient($softer_grey 50%, $white 50%);
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        margin: 0px 20px;
-        text-align: center;
-        line-height: 32.5px;
-        position: relative;
-        color: $soft_grey;
-        font-family: $Conv-Gotham_Bold;
-        &:hover {
-            cursor: pointer;
-        }
-        &:after {
-            content: "";
-            height: 2px;
-            position: absolute;
-            width: 50px;
-            background-color: $softer_grey;
-            top: 50%;
-            left: 30px;
-        }
+    color: $soft_grey;
+    font-family: $Conv-Gotham_Bold;
+    &:hover {
+      cursor: pointer;
     }
-    .stap-nummer:nth-child(2) {
-        margin-left: 0;
+    &:after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      width: 50px;
+      background-color: $softer_grey;
+      top: 50%;
+      left: 30px;
     }
+  }
+  .stap-nummer:nth-child(2) {
+    margin-left: 0;
+  }
 
-    .stap-nummer:last-child {
-        &:after {
-            width: 0;
-        }
+  .stap-nummer:last-child {
+    &:after {
+      width: 0;
     }
-    .stap-nummer.finished {
-        background: radial-gradient($lime 50%, $white 50%);
-        color: $white;
-        &:after {
-            background-color: $lime;
-        }
+  }
+  .stap-nummer.finished {
+    background: radial-gradient($lime 50%, $white 50%);
+    color: $white;
+    &:after {
+      background-color: $lime;
     }
-    .current-stap {
-        position: absolute;
-        border: 2px solid $lime;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        top: -2px;
-        z-index: 2;
-        transition: left 300ms ease-in-out;
-        &[data-position='0'] {
-            left: -2.4px;
-        }
-        &[data-position='1'] {
-            left: 71.9px;
-        }
-        &[data-position='2'] {
-            left: 145.8px;
-        }
-        &[data-position='3'] {
-            left: 219.8px;
-        }
-        &[data-position='4'] {
-            left: 293.5px;
-        }
-        &[data-position='5'] {
-            left: 367.3px;
-        }
-        &[data-position='6'] {
-            left: 441.3px;
-        }
+  }
+  .current-stap {
+    position: absolute;
+    border: 2px solid $lime;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -2px;
+    z-index: 2;
+    transition: left 300ms ease-in-out;
+    &[data-position='0'] {
+      left: -2.4px;
     }
+    &[data-position='1'] {
+      left: 71.9px;
+    }
+    &[data-position='2'] {
+      left: 145.8px;
+    }
+    &[data-position='3'] {
+      left: 219.8px;
+    }
+    &[data-position='4'] {
+      left: 293.5px;
+    }
+    &[data-position='5'] {
+      left: 367.3px;
+    }
+    &[data-position='6'] {
+      left: 441.3px;
+    }
+  }
 }
 
 .pure-skin-zow .pure-form input[type="email"]:required:focus,
 .pure-skin-zow .pure-form input[type="tel"]:required:focus {
-    border: 2px solid $cyan;
-    outline: none;
+  border: 2px solid $cyan;
+  outline: none;
 }
 
 .space-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-center {
+  display: flex;
+  margin: 1.7em 0 1em 0;
+  margin-top: 28px;
+  align-items: center;
+  div {
     display: flex;
-    margin: 1.7em 0 1em 0;
-    margin-top: 28px;
     align-items: center;
-    div {
-        display: flex;
-        align-items: center;
-        flex: 1 1 50%;
-    }
+    flex: 1 1 50%;
+  }
 }
 
 .pure-skin-zow .pure-form fieldset.submission legend {
-    font-size: 2em;
-    color: #1e4c77;
-    line-height: 1.2;
-    margin: 10px 0;
-    font-family: $Conv-Gotham-Light;
-    width: 100%;
-    border-bottom: solid 2px #c2edfc;
-    padding-bottom: 6px;
+  font-size: 2em;
+  color: #1e4c77;
+  line-height: 1.2;
+  margin: 10px 0;
+  font-family: $Conv-Gotham-Light;
+  width: 100%;
+  border-bottom: solid 2px #c2edfc;
+  padding-bottom: 6px;
 }
 
 #oplage input[type="radio"],
 #oplage input[type="checkbox"],
 .personalisatie input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    border: 2px solid #e5e5e5;
-    position: relative;
-    border-radius: 2px;
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    &:checked {
-        background: #0DB0FF;
-        border: none;
-    }
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #e5e5e5;
+  position: relative;
+  border-radius: 2px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  &:checked {
+    background: #0DB0FF;
+    border: none;
+  }
 }
 
 #oplage input[type="radio"] {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #oplage input[type="radio"]:checked + label,
 #oplage input[type="checkbox"]:checked + label,
 .personalisatie input[type="checkbox"]:checked + label {
-    &:before {
-        content: url('../images/vink.svg');
-        position: absolute;
-        left: -28.5px;
-        top: 2px;
-        width: 15px;
-    }
-    &:active {
-        appearance: none;
-        -webkit-appearance: none;
-    }
+  &:before {
+    content: url('../images/vink.svg');
+    position: absolute;
+    left: -28.5px;
+    top: 2px;
+    width: 15px;
+  }
+  &:active {
+    appearance: none;
+    -webkit-appearance: none;
+  }
 }
 
 #oplage input[type="radio"]:checked + label {
-    border-radius: 50%;
-    &:before {
-        content: '●';
-        color: $white;
-        left: -29.5px;
-        top: -10.5px;
-        font-size: 30px;
-    }
+  border-radius: 50%;
+  &:before {
+    content: '●';
+    color: $white;
+    left: -29.5px;
+    top: -10.5px;
+    font-size: 30px;
+  }
 }
 
 
 textarea {
-    resize: vertical;
-    min-height: 80px;
+  resize: vertical;
+  min-height: 80px;
 }
 
 .pure-skin-zow .pure-form label.check-label {
-    background-color: $lighter_cyan;
-    border-radius: 2px;
-    padding: 8px;
-    color: $dark_cyan;
-    &:hover {
-        cursor: pointer;
+  background-color: $lighter_cyan;
+  border-radius: 2px;
+  padding: 8px;
+  color: $dark_cyan;
+  &:hover {
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    &:checked {
+      border: none;
     }
-    input[type=checkbox] {
-        appearance: none;
-        -webkit-appearance: none;
-        width: 15px;
-        height: 15px;
-        margin-right: 20px;
-        &:checked {
-            border: none;
-        }
-        &:active {
-            appearance: none;
-            -webkit-appearance: none;
-        }
-        &:focus {
-            outline: none;
-        }
+    &:active {
+      appearance: none;
+      -webkit-appearance: none;
     }
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .pure-skin-zow .pure-form label.check-label.active {
-    opacity: 1;
-    background-color: $dark_cyan;
-    color: $white;
-    &:before {
-        content: url('../images/vink.svg');
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 16px;
-        top: 12px;
-    }
+  opacity: 1;
+  background-color: $dark_cyan;
+  color: $white;
+  &:before {
+    content: url('../images/vink.svg');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 16px;
+    top: 12px;
+  }
 }
 
 .zow-aside-usp.zow-banner {
-    input[type="radio"] {
-        appearance: none;
-        -webkit-appearance: none;
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  label {
+    &:hover {
+      cursor: pointer;
     }
-    label {
-        &:hover {
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 .zow-aside-usp.zow-banner.active {
-    opacity: 1;
-    border: 2px solid $cyan;
-    background-color: #F3FBFE;
+  opacity: 1;
+  border: 2px solid $cyan;
+  background-color: #F3FBFE;
 }
 
 .zow-aside-usp.zow-banner.not-selected {
-    opacity: .4;
+  opacity: .4;
 }
 
 .upload-area{
-    background: $softer_grey;
-    min-height: 170px;
-    border-radius: 2px;
-    outline: 3px dashed $soft_grey;
-    outline-offset: -3px;
-    text-align: center;
-    position: relative;
-    transition: outline-offset 50ms ease-in-out;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .dz-preview{
-        flex: 0 1 25%;
-        box-sizing: border-box;
-        padding: 20px;
-    }
+  background: $softer_grey;
+  min-height: 170px;
+  border-radius: 2px;
+  outline: 3px dashed $soft_grey;
+  outline-offset: -3px;
+  text-align: center;
+  position: relative;
+  transition: outline-offset 50ms ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .dz-preview{
+    flex: 0 1 25%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 }
 
 .upload-area label {
-    padding: 20px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .upload-area label.file-label {
-    &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-    }
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,
-    -50%);
-    font-family: $Conv-Gotham-Bold;
-    color: $dark_cyan;
-    font-size: 20px;
-    span {
-        font-family: $Conv-Gotham-Light;
-        text-decoration: none;
-    }
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,
+  -50%);
+  font-family: $Conv-Gotham-Bold;
+  color: $dark_cyan;
+  font-size: 20px;
+  span {
+    font-family: $Conv-Gotham-Light;
+    text-decoration: none;
+  }
 }
 
 .pure-skin-zow .pure-form input[type=button].upload-button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .upload-area.dragged {
-    outline: 3px dashed $cyan;
-    outline-offset: -15px;
+  outline: 3px dashed $cyan;
+  outline-offset: -15px;
 }
 
 .zow-units.ander-adres {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    appearance: none;
-    -webkit-appearance: none;
-    margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 
 }
 
 .numberfield {
-    z-index: 2;
-    position: relative;
-    margin-bottom: 10px;
-    .numberfield-button {
-        background-color: $soft_grey;
-        width: 37px;
-        flex-direction: row;
-        height: 29.33px;
-        color: $white;
-        display: flex;
-        justify-content: center;
-        img {
-            width: 30%;
-        }
-        &:hover {
-            cursor: pointer;
-            background-color: $cyan;
-        }
+  z-index: 2;
+  position: relative;
+  margin-bottom: 10px;
+  .numberfield-button {
+    background-color: $soft_grey;
+    width: 37px;
+    flex-direction: row;
+    height: 29.33px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 30%;
     }
-    .button-minus {
-        position: absolute;
-        top: 2px;
-        right: 39px;
+    &:hover {
+      cursor: pointer;
+      background-color: $cyan;
     }
-    .button-plus {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-    }
+  }
+  .button-minus {
+    position: absolute;
+    top: 2px;
+    right: 39px;
+  }
+  .button-plus {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
 }
 
 .numberfield.active {
-    .numberfield-button {
-        background-color: $cyan;
-        &:hover {
-            background-color: darken($cyan, 10%);
-        }
+  .numberfield-button {
+    background-color: $cyan;
+    &:hover {
+      background-color: darken($cyan, 10%);
     }
+  }
 }
 
 .gegevens-bedrijf,
@@ -352,5 +352,5 @@ section#afwerking_personalisatie,
 section#aflevermethode,
 section#bijlage_algemeneopmerkingen,
 .papier-binnenwerk-cover-cover {
-    display: none;
+  display: none;
 }
