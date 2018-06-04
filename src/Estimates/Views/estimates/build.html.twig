@@ -1,0 +1,38 @@
+{% extends 'layouts/application.html.twig' %}
+
+{% block content %}
+<h1>Offerte aanvragen</h1>
+<div class="zow-unit zow-1-1 stappen">
+  <div class="current-stap" data-position=0></div>
+  <div class="stap-nummer tooltip finished">1
+    <span class="tooltiptext">Gegevens</span>
+  </div>
+  <div class="stap-nummer tooltip">2
+    <span class="tooltiptext">Oplage</span>
+  </div>
+  <div class="stap-nummer tooltip">3
+    <span class="tooltiptext">Formaat en omvang</span>
+  </div>
+  <div class="stap-nummer tooltip">4
+    <span class="tooltiptext">Papier en bedrukking</span>
+  </div>
+  <div class="stap-nummer tooltip">5
+    <span class="tooltiptext">Afwerking en personalisatie</span>
+  </div>
+  <div class="stap-nummer tooltip">6
+    <span class="tooltiptext">Aflevermethode</span>
+  </div>
+  <div class="stap-nummer tooltip">7
+    <span class="tooltiptext">Bijlage en algemene opmerkingen</span>
+  </div>
+</div>
+<form action="post" class="pure-form" id="offerteaanvraag">
+  {% include 'sections/paper.html.twig' %}
+  {% include 'sections/details.html.twig' %}
+  {% include 'sections/edition.html.twig' %}
+  {% include 'sections/dimensions.html.twig' %}
+  {% include 'sections/finishing.html.twig' %}
+  {% include 'sections/delivery.html.twig' %}
+  {% include 'sections/remarks.html.twig' %}
+</form>
+{% endblock %}

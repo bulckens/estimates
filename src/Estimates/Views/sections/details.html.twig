@@ -1,0 +1,86 @@
+<section id="gegevens">
+  <fieldset class="submission">
+    <legend>Gegevens</legend>
+  </fieldset>
+  <div class="zow-units">
+    <p class="feedback-gegevens">Velden met * zijn verplicht in te vullen</p>
+    <div class="space-between">
+      <div class="zow-unit zow-1-2">
+        <label for="persoon">Je bestelt als</label>
+        <select name="estimate[details][organization]" id="persoon" class="zow-unit zow-1-1">
+          <option value="" selected disabled>Kies</option>
+          <option value="bedrijf">Bedrijf - organisatie</option>
+          <option value="particulier">Particulier</option>
+        </select>
+      </div>
+      <div class="zow-unit zow-1-2">
+        <label for="email">Email*</label>
+        <input type="email" class="zow-unit zow-1-1" required id="email" name="estimate[details][email]">
+      </div>
+    </div>
+    <div class="gegevens-bedrijf">
+      <div class="space-between">
+        <div class="zow-unit zow-1-2">
+          <label for="btw_plichtig">BTW</label>
+          <select name="estimate[details][vat_liable]" id="btw_plichtig" class="zow-unit zow-1-1">
+            <option value="" selected disabled>kies</option>
+            <option value="heeft een BTW-nummer">Mijn BTW-nummer is:</option>
+            <option value="heeft geen BTW-nummer">Ik heb geen BTW-nummer</option>
+            <option value="niet BTW-plichtig">Ik ben niet BTW plichtig</option>
+          </select>
+        </div>
+        <div class="zow-unit zow-1-2">
+          <label for="btw-nummer">BTW-nummer (met landcode)</label>
+          <input type="text" class="zow-unit zow-1-1" disabled id="btw_input" name="estimate[details][vat_number]">
+        </div>
+      </div>
+      <div class="space-between">
+        <div class="zow-unit zow-1-2">
+          <label for="">Naam van bedrijf</label>
+          <input type="text" class="zow-unit zow-1-1" name="estimate[details][company]">
+        </div>
+        <div class="zow-unit zow-1-2">
+          <label for="">Rechtsvorm</label>
+          <input type="text" class="zow-unit zow-1-1" name="estimate[details][organization_type]">
+        </div>
+      </div>
+    </div>
+    <div class="zow-unit zow-1-2">
+      <label for="">Voor- en achternaam</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[details][name]">
+    </div>
+    <div class="zow-unit zow-1-2">
+      <label for="">Land</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[details][country]">
+    </div>
+    <div class="zow-unit zow-5-6">
+      <label for="">Straat</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[details][street]">
+    </div>
+    <div class="zow-unit zow-1-6">
+      <label for="">Nr</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[details][number]">
+    </div>
+    <div class="zow-unit zow-1-6">
+      <label for="">Postcode</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[details][postalcode]">
+    </div>
+    <div class="zow-unit zow-5-6">
+      <div class="space-between">
+        <div class="zow-unit zow-1-2">
+          <label for="">Plaats</label>
+          <input type="text" class="zow-unit zow-1-1" name="estimate[details][place]">
+        </div>
+        <div class="zow-unit zow-1-2">
+          <label for="">Telefoonnummer*</label>
+          <input type="tel" class="zow-unit zow-1-1" required name="estimate[details][telephone]">
+        </div>
+      </div>
+    </div>
+    <div class="zow-unit zow-1-4"></div>
+    <div class="zow-unit zow-2-4"></div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+  </div>
+</section>

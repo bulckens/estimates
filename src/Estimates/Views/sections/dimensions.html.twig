@@ -1,0 +1,56 @@
+<section id="formaat_omvang">
+  <fieldset class="submission">
+    <legend>Formaat</legend>
+  </fieldset>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-2">
+      <label for="">Formaat (in mm)</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[deminsions][format]">
+    </div>
+    <div class="zow-unit zow-1-2">
+      <label for="">Open formaat (indien van toepassing)</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][fromat_open]">
+    </div>
+  </div>
+  <fieldset class="submission">
+    <legend>Omvang</legend>
+  </fieldset>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-2">
+      <label for="omvang">Omvang</label>
+      <select name="estimate[dimensions][size]" id="omvang" class="zow-unit zow-1-1">
+        <option value="enkel">Enkel (vb. flyer)</option>
+        <option value="gevouwen">Gevouwen (meerluik)</option>
+        <option value="boekje">Boekje</option>
+      </select>
+    </div>
+    <div class="zow-unit zow-1-2">
+      <div class="omvang-aantal-luiken">
+        <label for="">Aantal luiken</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][shutters]">
+      </div>
+      <div class="omvang-cover">
+        <label for="">Cover</label>
+        <select name="estimate[dimensions][cover]" id="selfcover" class="zow-unit zow-1-1">
+          <option value="selfcover">Selfcover</option>
+          <option value="cover en binnenwerk">Cover + binnenwerk</option>
+        </select>
+        <div class="omvang-cover-binnenwerk">
+          <label for="">Aantal pagina's binnenwerk</label>
+          <input type="text" class="zow-unit zow-1-1" name="estimate[dimensions][pages]">
+        </div>
+      </div>
+    </div>
+    <div class="zow-unit zow-1-1">
+      <label for="">Opmerking</label>
+      <textarea class="zow-unit zow-1-1" name="estimate[dimensions][comment]"></textarea>
+    </div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+    <div class="zow-unit zow-2-4"></div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+  </div>
+</section>

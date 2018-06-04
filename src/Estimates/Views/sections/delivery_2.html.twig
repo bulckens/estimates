@@ -1,0 +1,54 @@
+<section id="aflevermethode">
+  <fieldset class="submission">
+    <legend>Aflevermethode</legend>
+  </fieldset>
+  <div class="zow-unit zow-1-2">
+    <label for="">Kies de gewenste aflevermethode</label>
+    <div class="zow-aside-usp zow-banner">
+      <label for="afhalen" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+      <input type="radio" id="afhalen" name="estimate[delivery][type]" value="afhalen">Ik haal mijn drukwerk gratis af in één van de ZwartOpWit-servicepunten.
+      <img src="/assets/images/servicepin.png" alt="" class="zow_aside_usp_mappin">
+    </div>
+    <div class="zow-aside-usp zow-banner">
+      <label for="facturatieadres" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+      <input type="radio" id="facturatieadres" name="estimate[delivery][type]" value="facturatieadres">Ik wil mijn drukwerk laten leveren op mijn facturatieadres
+      <img src="/assets/images/truck.png" alt="" class="zow_aside_usp_mappin">
+    </div>
+    <div class="zow-aside-usp zow-banner">
+      <label for="ander" style="left:0; top:0; position: absolute; width: 100%; height: 100%;"></label>
+      <input type="radio" id="ander" name="estimate[delivery][type]" value="ander adres">Ik wil mijn drukwerk laten leveren op een ander adres.
+      <img src="/assets/images/truck-2.png" alt="" class="zow_aside_usp_mappin">
+    </div>
+    <div class="zow-units ander-adres">
+      <div class="zow-unit zow-5-6">
+        <label for="">Straat</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][street]">
+      </div>
+      <div class="zow-unit zow-1-6">
+        <label for="">Nr</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][number]">
+      </div>
+      <div class="zow-unit zow-1-6">
+        <label for="">Postcode</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][postalcode]">
+      </div>
+      <div class="zow-unit zow-5-6">
+        <label for="">Plaats</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][place]">
+      </div>
+      <div class="zow-unit zow-1-1">
+        <label for="">Land</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[delivery][country]">
+      </div>
+    </div>
+  </div>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+    <div class="zow-unit zow-2-4"></div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+  </div>
+</section>

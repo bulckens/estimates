@@ -9,8 +9,8 @@ use Prophecy\Argument;
 class EstimateAdaptorSpec extends ObjectBehavior {
 
   // Action methods
-  function it_has_an_index_action() {
-    $this->action( 'index' )->shouldHaveType( 'Bulckens\ApiTools\Action' );
+  function it_has_a_build_action() {
+    $this->action( 'build' )->shouldHaveType( 'Bulckens\ApiTools\Action' );
   }
 
   function it_has_a_create_action() {

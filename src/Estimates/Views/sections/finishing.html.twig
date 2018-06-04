@@ -1,0 +1,92 @@
+<section id="afwerking_personalisatie">
+  <fieldset class="submission">
+    <legend>Afwerking</legend>
+  </fieldset>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-2">
+      <label for="">Kies de gewenste afwerking:</label>
+
+      <label for="schoonsnijden" class="check-label">
+        <input type="hidden" name="estimate[finish][clean_cut]" value="0">
+        <input type="checkbox" name="estimate[finish][clean_cut]" id="schoonsnijden" value="1">Schoonsnijden
+      </label>
+      <label for="vouwen" class="check-label">
+        <input type="hidden" name="estimate[finish][fold]" value="0">
+        <input type="checkbox" name="estimate[finish][fold]" id="vouwen" value="1">Vouwen
+      </label>
+      <label for="nieten" class="check-label">
+        <input type="hidden" name="estimate[finish][staple]" value="0">
+        <input type="checkbox" name="estimate[finish][staple]" id="nieten" value="1">Nieten
+      </label>
+      <label for="uitkappen" class="check-label">
+        <input type="hidden" name="estimate[finish][diecut]" value="0">
+        <input type="checkbox" name="estimate[finish][diecut]" id="uitkappen" value="1">Uitkappen
+      </label>
+      <label for="garenloos_brocheren" class="check-label">
+        <input type="hidden" name="estimate[finish][binding]" value="0">
+        <input type="checkbox" name="estimate[finish][binding]" id="garenloos_brocheren" value="1">Garenloos brocheren
+      </label>
+      <label for="wire_o" class="check-label">
+        <input type="hidden" name="estimate[finish][wire_o]" value="0">
+        <input type="checkbox" name="estimate[finish][wire_o]" id="wire_o" value="1">Wire-o
+      </label>
+      <div class="zow-unit zow-1-1">
+        <label for="">Andere:</label>
+        <textarea class="zow-unit zow-1-1" name="estimate[finish][comment_finish]"></textarea>
+      </div>
+
+    </div>
+
+    <div class="zow-unit zow-1-2">
+      <label for="">Kies de gewenste verdeling:</label>
+
+      <label for="plastificatie" class="check-label">
+        <input type="hidden" name="estimate[finish][plasticizing]" value="0">
+        <input type="checkbox" id="plastificatie" name="estimate[finish][plasticizing]" value="1">Plastificatie
+      </label>
+      <label for="spot_uv" class="check-label">
+        <input type="hidden" name="estimate[finish][spot_uv]" value="0">
+        <input type="checkbox" id="spot_uv" name="estimate[finish][spot_uv]" value="1">Spot-UV
+      </label>
+      <label for="foliedruk" class="check-label">
+        <input type="hidden" name="estimate[finish][foil]" value="0">
+        <input type="checkbox" id="foliedruk" name="estimate[finish][foil]" value="1">Foliedruk
+      </label>
+      <label for="blinddruk" class="check-label">
+        <input type="hidden" name="estimate[finish][embossing]" value="0">
+        <input type="checkbox" id="blinddruk" name="estimate[finish][embossing]" value="1">Blinddruk
+      </label>
+      <div class="zow-unit zow-1-1">
+        <label for="">Andere:</label>
+        <textarea class="zow-unit zow-1-1" name="estimate[finish][comment_distribution]"></textarea>
+      </div>
+    </div>
+    <div class="zow-unit zow-1-1">
+      <label for="">Verpakking (dozen, krimp,...)</label>
+      <input type="text" class="zow-unit zow-1-1" name="estimate[finish][comment_packaging]">
+    </div>
+  </div>
+  <fieldset class="submission">
+    <legend>Personalisatie</legend>
+  </fieldset>
+  <div class="zow-unit zow-1-1 personalisatie">
+    <div class="flex-center">
+      <input type="hidden" value="0" name="estimate[finish][personalize]">
+      <input type="checkbox" value="1" id="personalisatie" name="estimate[finish][personalize]">
+      <label for="personalisatie">Personalisatie</label>
+    </div>
+  </div>
+  <div class="zow-unit zow-1-1">
+    <label for="">Opmerking</label>
+    <textarea class="zow-unit zow-1-1" name="[estimate][finish][comment_personalize]"></textarea>
+  </div>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+    <div class="zow-unit zow-2-4"></div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+  </div>
+</section>

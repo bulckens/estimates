@@ -7,8 +7,10 @@ use Bulckens\ApiTools\Adaptor;
 class EstimateAdaptor extends Adaptor {
 
   // Estimate form
-  public function index() {
-    echo 'hellø';
+  public function build() {
+    return $this->render( 'estimates/build.html.twig', [
+      
+    ]);
   }
 
 

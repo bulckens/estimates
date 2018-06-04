@@ -8,7 +8,7 @@ $route->group( '/', function() use( $route ) {
   $adaptor = new EstimateAdaptor();
 
   // get home
-  $route->get(  '', [ $adaptor, 'index'  ]);
-  $route->post( '', [ $adaptor, 'create' ]);
+  $route->get(  '', $adaptor->action( 'build' ));
+  $route->post( '', $adaptor->action( 'create' ));
 
 });

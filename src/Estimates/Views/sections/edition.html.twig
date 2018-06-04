@@ -1,0 +1,69 @@
+<section id="oplage">
+  <fieldset class="submission">
+    <legend>Oplage</legend>
+  </fieldset>
+  <div class="zow-units">
+    <div class="zow-unit zow-1-2">
+      <label for="">Oplage</label>
+      <div class="numberfield">
+        <div class="numberfield-button button-minus">
+          <img src="/assets/images/minus-sign.svg" alt="">
+        </div>
+        <div class="numberfield-button button-plus">
+          <img src="/assets/images/plus-sign.svg" alt="">
+        </div>
+        <input type="number" min="0" class="zow-unit zow-1-1" name="estimate[edition][amount]">
+      </div>
+    </div>
+    <div class="zow-unit zow-1-2">
+      <div class="flex-center">
+        <input type="hidden" class="staffel" value="0" name="estimate[edition][scale]">
+        <input type="checkbox" class="staffel" id="staffel" value="1" name="estimate[edition][scale]">
+        <label for="staffel">Ik wil een offerte voor meerdere oplages</label>
+      </div>
+      <div class="oplage-staffel">
+        <label for="">Oplage aantal 1</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_1]">
+        <label for="">Oplage aantal 2</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_2]">
+        <label for="">Oplage aantal 3</label>
+        <input type="text" class="zow-unit zow-1-1" name="estimate[edition][scale_3]">
+      </div>
+    </div>
+    <div class="zow-unit zow-1-2">
+      <label for="aantal_versies_input">Aantal versies</label>
+      <div class="numberfield">
+        <div class="numberfield-button button-minus">
+          <img src="/assets/images/minus-sign.svg" alt="">
+        </div>
+        <div class="numberfield-button button-plus">
+          <img src="/assets/images/plus-sign.svg" alt="">
+        </div>
+        <input type="number" min="0" class="zow-unit zow-1-1" id="aantal_versies_input" name="estimate[edition][versions]">
+      </div>
+    </div>
+    <div class="zow-unit zow-1-2">
+      <div class="flex-center oplage-verdeling">
+        <div>
+          <input type="radio" id="gelijke_verdeling" value="gelijke verdeling" name="estimate[edition][devided]">
+          <label for="gelijke_verdeling">Gelijke verdeling</label>
+        </div>
+        <div>
+          <input type="radio" id="ongelijke_verdeling" value="ongelijke verdeling" name="estimate[edition][devided]">
+          <label for="ongelijke_verdeling">Ongelijke verdeling</label>
+        </div>
+      </div>
+    </div>
+    <div class="zow-unit zow-1-1">
+      <label for="">Verduidelijking over de verdeling</label>
+      <textarea class="zow-unit zow-1-1" name="estimate[edition][comment]"></textarea>
+    </div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="terug" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+    <div class="zow-unit zow-2-4"></div>
+    <div class="zow-unit zow-1-4">
+      <input type="button" value="verder" class="pure-button zow-1-1 pure-button-sec">
+    </div>
+  </div>
+</section>
