@@ -9,7 +9,9 @@ if ( ! defined( 'APP_ENV' ) )
 require 'vendor/autoload.php';
 
 use Bulckens\AppTools\App;
+use Bulckens\ApiTools\Api;
 
 // initialize application
 $app = new App( APP_ENV );
+$app->module( 'api', new Api());
 $app->run();

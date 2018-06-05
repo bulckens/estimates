@@ -14,8 +14,10 @@ class EstimateAdaptor extends Adaptor {
 
   // Create estimate
   public function create() {
+    $this->requireToken();
+
     // build estimate from form data
-    $estimate = new Estimate();
+    $estimate = new Estimate( $this->req()->getParam( 'estimate' ));
 
     if ( $estimate->isValid() ) {
       return $this->render( 'estimates/sent.html.twig' );
