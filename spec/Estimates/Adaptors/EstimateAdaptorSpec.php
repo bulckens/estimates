@@ -17,4 +17,21 @@ class EstimateAdaptorSpec extends ObjectBehavior {
     $this->action( 'create' )->shouldHaveType( 'Bulckens\ApiTools\Action' );
   }
 
+
+  // Build action
+  function it_renders_the_build_view_creating_a_new_estimate() {
+
+  }
+
+
+  // Create action
+  function it_renders_the_sent_view_if_an_estimate_has_been_created_successfully() {
+
+  }
+
+  function it_renders_the_build_view_if_an_estimate_has_errors() {
+    
+  }
+
+
 }

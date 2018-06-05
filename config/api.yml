@@ -1,5 +1,7 @@
 generic: &generic
-  lifespan:  3600
+  lifespan:  28800
+  secrets:
+    authenticity_token: "m96sWr846765t89H2x(7[n3NYMGhZ85S"
 
 development:
   <<: *generic
@@ -9,3 +11,5 @@ test:
 
 production:
   <<: *generic
+  secrets:
+    authenticity_token: "*|A15R*1=Z04;w^:m+=A%a;=8i+-:%=o"

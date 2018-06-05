@@ -2,12 +2,10 @@
 
 namespace Estimates\Models;
 
-use Bulckens\ApiTools\Model;
+class Estimate {
 
-class Estimate extends Model {
+  public function isValid() {
 
-  protected $path = 'api/v1/mails';
-
-  
+  }
 
 }

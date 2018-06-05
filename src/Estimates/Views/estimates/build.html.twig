@@ -26,7 +26,8 @@
     <span class="tooltiptext">Bijlage en algemene opmerkingen</span>
   </div>
 </div>
-<form action="post" class="pure-form" id="offerteaanvraag">
+<form action="/" method="post" class="pure-form" id="offerteaanvraag">
+  <input type="hidden" name="authenticity_token" value="{{ authenticity_token }}">
   {% include 'sections/paper.html.twig' %}
   {% include 'sections/details.html.twig' %}
   {% include 'sections/edition.html.twig' %}
