@@ -66,9 +66,7 @@ class Estimate {
 
     // send mail
     $response = $mail->post();
-var_dump( $response );
-var_dump( \Bulckens\AppTools\App::env());
-die();
+    
     // detect successful
     return !! $response->attr( 'success' );
   }
