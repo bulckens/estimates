@@ -66,7 +66,8 @@ class Estimate {
 
     // send mail
     $response = $mail->post();
-
+var_dump( $response );
+die();
     // detect successful
     return !! $response->attr( 'success' );
   }

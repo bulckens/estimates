@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.10.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "Estimates"
+set :repo_url, "git@github.com:bulckens/estimates.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -20,11 +20,15 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # Default value for :pty is false
 # set :pty, true
 
+# Set log log_level
+set :log_level, :info
+
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+set :linked_dirs, %w[vendor]
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -33,7 +37,34 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # set :local_user, -> { `git config user.name`.chomp }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+# Define remote file management
+set :copy_exclude, %w[.git .DS_Store .gitignore .gitmodules]
+
+# Update composer package
+namespace :composer do
+  desc 'Update composer package'
+  task :update do
+    on roles( :app, :web ), in: :sequence do
+      execute "cd #{ release_path } && /usr/bin/composer update"
+    end
+  end
+end
+before 'deploy:symlink:release', 'composer:update'
+
+# Ensure correct directories and permissions
+namespace :permissions do
+  desc 'Setting directory permissions'
+  task :directories do
+    on roles( :app, :web ), in: :sequence do
+      execute "mkdir #{ release_path }/log"
+      execute "chown -R trikke:www-data #{ release_path }/log"
+      execute "chown -R trikke:www-data #{ release_path }/config"
+    end
+  end
+end
+before 'deploy:symlink:release', 'permissions:directories'
