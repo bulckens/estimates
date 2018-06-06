@@ -40,7 +40,7 @@ class EstimateSpec extends ObjectBehavior {
 
     // Send methods
     function it_sends_an_email_using_the_mailer_api() {
-
+      
     }
 
 

@@ -3,6 +3,7 @@
 namespace Estimates\Adaptors;
 
 use Estimates\Base\Adaptor;
+use Estimates\Models\Estimate;
 
 class EstimateAdaptor extends Adaptor {
 
@@ -20,7 +21,7 @@ class EstimateAdaptor extends Adaptor {
     $estimate = new Estimate( $this->req()->getParam( 'estimate' ));
 
     if ( $estimate->isValid() ) {
-      return $this->render( 'estimates/sent.html.twig' );
+      return $this->render( 'estimates/show.html.twig' );
     } else {
       return $this->render( 'estimates/build.html.twig', [
         'estimate' => $estimate
