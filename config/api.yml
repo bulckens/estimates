@@ -2,6 +2,9 @@ generic: &generic
   lifespan:  28800
   secrets:
     authenticity_token: "m96sWr846765t89H2x(7[n3NYMGhZ85S"
+    mailer: "zIen04tN7z0NgxBd96u2G30Fx8hzQy0m"
+  sources:
+    mailer: "http://mailer.zwartopwit.local"
 
 development:
   <<: *generic
@@ -13,3 +16,6 @@ production:
   <<: *generic
   secrets:
     authenticity_token: "*|A15R*1=Z04;w^:m+=A%a;=8i+-:%=o"
+    mailer: "z~rUZtt%F!E3~*b988f^VB111bAzg:=-979;USR|xp_9t;+x;x-e30L7^=5E8.1a"
+  sources:
+    mailer: "https://mailer.zwartopwit.be"

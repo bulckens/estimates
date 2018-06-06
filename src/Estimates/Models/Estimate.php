@@ -3,7 +3,6 @@
 namespace Estimates\Models;
 
 use Illuminate\Support\Str;
-use Bulckens\AppTools\App;
 
 class Estimate {
 
@@ -51,9 +50,33 @@ class Estimate {
   }
 
 
+  // Send mail and save attachment
+  public function save() {
+    return $this->send();
+  }
+
+
+  // Send mail
+  public function send() {
+    // create new mail instance
+    $mail = new Mail([
+      'from' => $this->data['details']['email']
+    , 'text' => $this->compose()
+    ]);
+
+    // send mail
+    $response = $mail->post();
+
+    // detect successful
+    return !! $response->attr( 'success' );
+  }
+
+
   // Returns error
   public function errors() {
     return $this->errors ?: [];
   }
+
+
 
 }

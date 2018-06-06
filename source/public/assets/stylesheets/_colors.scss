@@ -1,0 +1,211 @@
+// Greys
+$black:               #000000;
+$deeper_grey:         #1a1a1a;
+$deep_grey:           #333333;
+$darker_grey:         #4d4d4d;
+$dark_grey:           #666666;
+$grey:                #808080;
+$greyer:              #999999;
+$light_grey:          #b2b2b2;
+$lighter_grey:        #cccccc;
+$soft_grey:           #e5e5e5;
+$softer_grey:         #f2f2f2;
+$dark_white:		  #FCFCFC;
+$white:               #ffffff;
+
+// Colors
+$dark_magenta:        #781737;
+$magenta:             #df2a61;
+$light_magenta:       #e5679c;
+$lighter_magenta:     #efaed3;
+
+$dark_red:            #8a181e;
+$red:                 #e1272c;
+$light_red:           #ea888c;
+$lighter_red:         #f3c0c2;
+
+$dark_orange:         #8f3a1d;
+$orange:              #e5592e;
+$light_orange:        #f0a86c;
+$lighter_orange:      #f7d3b2;
+
+$dark_tangerine:      #945d21;
+$tangerine:           #ed9735;
+$light_tangerine:     #f6ca72;
+$lighter_tangerine:   #fae4b5;
+
+$dark_yellow:         #8c7a23;
+$yellow:              #f9da3f;
+$light_yellow:        #fded77;
+$lighter_yellow:      #fef6b7;
+
+$dark_lime:           #657125;
+$lime:                #b8cd3f;
+$light_lime:          #dbe696;
+$lighter_lime:        #ecf2ca;
+
+$dark_mint:           #355437;
+$mint:                #75bf78;
+$light_mint:          #b8ddb8;
+$lighter_mint:        #daeedc;
+
+$dark_turquoise:      #235458;
+$turquoise:           #4ab0b7;
+$light_turquoise:     #96d6db;
+$lighter_turquoise:   #c9eaed;
+
+$dark_cyan:           #1e4c77;
+$cyan:                #0db0ff;
+$light_cyan:          #72c8f5;
+$lighter_cyan:        #c2edfc;
+
+$dark_cerulean:       #173161;
+$cerulean:            #2b63cb;
+$light_cerulean:      #8ab5e6;
+$lighter_cerulean:    #c3dcf3;
+
+$dark_purple:         #342253;
+$purple:              #5f3c9a;
+$light_purple:        #a997cb;
+$lighter_purple:      #d3c9e5;
+
+$dark_red_violet:     #55123b;
+$red_violet:          #9f216d;
+$light_red_violet:    #cd81b2;
+$lighter_red_violet:  #e5bbd7;
+
+
+// Social colors
+$twitter:			  #00aced;
+$facebook:			  #4267b2;
+$linkedin:			  #007bb5;
+$youtube:			  #bb0000;
+$instagram:			  #125688;
+
+// http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+
+// As classes
+.zow-black                 { color: $black;              }
+.zow-deeper-grey           { color: $deeper_grey;        }
+.zow-deep-grey             { color: $deep_grey;          }
+.zow-darker-grey           { color: $darker_grey;        }
+.zow-dark-grey             { color: $dark_grey;          }
+.zow-grey                  { color: $grey;               }
+.zow-greyer                { color: $greyer;             }
+.zow-light-grey            { color: $light_grey;         }
+.zow-lighter-grey          { color: $lighter_grey;       }
+.zow-soft-grey             { color: $soft_grey;          }
+.zow-softer-grey           { color: $softer_grey;        }
+.zow-white                 { color: $white;              }
+
+.zow-dark-magenta          { color: $dark_magenta;       }
+.zow-magenta               { color: $magenta;            }
+.zow-light-magenta         { color: $light_magenta;      }
+.zow-lighter-magenta       { color: $lighter_magenta;    }
+.zow-dark-red              { color: $dark_red;           }
+.zow-red                   { color: $red;                }
+.zow-light-red             { color: $light_red;          }
+.zow-lighter-red           { color: $lighter_red;        }
+.zow-dark-orange           { color: $dark_orange;        }
+.zow-orange                { color: $orange;             }
+.zow-light-orange          { color: $light_orange;       }
+.zow-lighter-orange        { color: $lighter_orange;     }
+.zow-dark-tangerine        { color: $dark_tangerine;     }
+.zow-tangerine             { color: $tangerine;          }
+.zow-light-tangerine       { color: $light_tangerine;    }
+.zow-lighter-tangerine     { color: $lighter_tangerine;  }
+.zow-dark-yellow           { color: $dark_yellow;        }
+.zow-yellow                { color: $yellow;             }
+.zow-light-yellow          { color: $light_yellow;       }
+.zow-lighter-yellow        { color: $lighter_yellow;     }
+.zow-dark-lime             { color: $dark_lime;          }
+.zow-lime                  { color: $lime!important;               }
+.zow-light-lime            { color: $light_lime;         }
+.zow-lighter-lime          { color: $lighter_lime;       }
+.zow-dark-mint             { color: $dark_mint;          }
+.zow-mint                  { color: $mint;               }
+.zow-light-mint            { color: $light_mint;         }
+.zow-lighter-mint          { color: $lighter_mint;       }
+.zow-dark-turquoise        { color: $dark_turquoise;     }
+.zow-turquoise             { color: $turquoise!important;          }
+.zow-light-turquoise       { color: $light_turquoise!important;    }
+.zow-lighter-turquoise     { color: $lighter_turquoise;  }
+.zow-dark-cyan             { color: $dark_cyan;          }
+.zow-cyan                  { color: $cyan;               }
+.zow-light-cyan            { color: $light_cyan;         }
+.zow-lighter-cyan          { color: $lighter_cyan;       }
+.zow-dark-cerulean         { color: $dark_cerulean!important;    }
+.zow-cerulean              { color: $cerulean!important;    }
+.zow-light-cerulean        { color: $light_cerulean!important;    }
+.zow-lighter-cerulean      { color: $lighter_cerulean!important;    }
+.zow-dark-purple           { color: $dark_purple;        }
+.zow-purple                { color: $purple;             }
+.zow-light-purple          { color: $light_purple;       }
+.zow-lighter-purple        { color: $lighter_purple;     }
+.zow-dark-red-violet       { color: $dark_red_violet;    }
+.zow-red-violet            { color: $red_violet;         }
+.zow-light-red-violet      { color: $light_red_violet;   }
+.zow-lighter-red-violet    { color: $lighter_red_violet; }
+
+// As background classes
+.zow-black-bg              { background-color: $black;              }
+.zow-deeper-grey-bg        { background-color: $deeper_grey;        }
+.zow-deep-grey-bg          { background-color: $deep_grey;          }
+.zow-darker-grey-bg        { background-color: $darker_grey;        }
+.zow-dark-grey-bg          { background-color: $dark_grey;          }
+.zow-grey-bg               { background-color: $grey;               }
+.zow-greyer-bg             { background-color: $greyer;             }
+.zow-light-grey-bg         { background-color: $light_grey;         }
+.zow-lighter-grey-bg       { background-color: $lighter_grey;       }
+.zow-soft-grey-bg          { background-color: $soft_grey;          }
+.zow-softer-grey-bg        { background-color: $softer_grey;        }
+.zow-white-bg              { background-color: $white;              }
+
+.zow-dark-magenta-bg       { background-color: $dark_magenta;       }
+.zow-magenta-bg            { background-color: $magenta;            }
+.zow-light-magenta-bg      { background-color: $light_magenta;      }
+.zow-lighter-magenta-bg    { background-color: $lighter_magenta;    }
+.zow-dark-red-bg           { background-color: $dark_red;           }
+.zow-red-bg                { background-color: $red;                }
+.zow-light-red-bg          { background-color: $light_red;          }
+.zow-lighter-red-bg        { background-color: $lighter_red;        }
+.zow-dark-orange-bg        { background-color: $dark_orange;        }
+.zow-orange-bg             { background-color: $orange;             }
+.zow-light-orange-bg       { background-color: $light_orange;       }
+.zow-lighter-orange-bg     { background-color: $lighter_orange;     }
+.zow-dark-tangerine-bg     { background-color: $dark_tangerine;     }
+.zow-tangerine-bg          { background-color: $tangerine;          }
+.zow-light-tangerine-bg    { background-color: $light_tangerine;    }
+.zow-lighter-tangerine-bg  { background-color: $lighter_tangerine;  }
+.zow-dark-yellow-bg        { background-color: $dark_yellow;        }
+.zow-yellow-bg             { background-color: $yellow!important;   }
+.zow-light-yellow-bg       { background-color: $light_yellow;       }
+.zow-lighter-yellow-bg     { background-color: $lighter_yellow;     }
+.zow-dark-lime-bg          { background-color: $dark_lime;          }
+.zow-lime-bg               { background-color: $lime!important;               }
+.zow-light-lime-bg         { background-color: $light_lime;         }
+.zow-lighter-lime-bg       { background-color: $lighter_lime;       }
+.zow-dark-mint-bg          { background-color: $dark_mint;          }
+.zow-mint-bg               { background-color: $mint;               }
+.zow-light-mint-bg         { background-color: $light_mint;         }
+.zow-lighter-mint-bg       { background-color: $lighter_mint;       }
+.zow-dark-turquoise-bg     { background-color: $dark_turquoise;     }
+.zow-turquoise-bg          { background-color: $turquoise;          }
+.zow-light-turquoise-bg    { background-color: $light_turquoise;    }
+.zow-lighter-turquoise-bg  { background-color: $lighter_turquoise;  }
+.zow-dark-cyan-bg          { background-color: $dark_cyan;          }
+.zow-cyan-bg               { background-color: $cyan;               }
+.zow-light-cyan-bg         { background-color: $light_cyan;         }
+.zow-lighter-cyan-bg       { background-color: $lighter_cyan;       }
+.zow-dark-cerulean-bg      { background-color: $dark_cerulean!important;      }
+.zow-cerulean-bg           { background-color: $cerulean!important;           }
+.zow-light-cerulean-bg     { background-color: $light_cerulean;     }
+.zow-lighter-cerulean-bg   { background-color: $lighter_cerulean;   }
+.zow-dark-purple-bg        { background-color: $dark_purple;        }
+.zow-purple-bg             { background-color: $purple;             }
+.zow-light-purple-bg       { background-color: $light_purple;       }
+.zow-lighter-purple-bg     { background-color: $lighter_purple;     }
+.zow-dark-red-violet-bg    { background-color: $dark_red_violet;    }
+.zow-red-violet-bg         { background-color: $red_violet;         }
+.zow-light-red-violet-bg   { background-color: $light_red_violet;   }
+.zow-lighter-red-violet-bg { background-color: $lighter_red_violet; }

@@ -3,6 +3,8 @@ generic: &generic
     - notifier
     - router
     - view
+  mail:
+    to: 'w@zwartopwit.be'
 
 development:
   <<: *generic
@@ -12,3 +14,5 @@ test:
 
 production:
   <<: *generic
+  mail:
+    to: 'offerte@zwartopwit.be'

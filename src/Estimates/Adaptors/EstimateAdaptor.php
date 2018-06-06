@@ -21,7 +21,10 @@ class EstimateAdaptor extends Adaptor {
     $estimate = new Estimate( $this->req()->getParam( 'estimate' ));
 
     if ( $estimate->isValid() ) {
+      $estimate->save();
+
       return $this->render( 'estimates/show.html.twig' );
+      
     } else {
       return $this->render( 'estimates/build.html.twig', [
         'estimate' => $estimate

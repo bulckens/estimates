@@ -2,6 +2,8 @@
 
 namespace spec\Estimates\Models;
 
+use Bulckens\AppTools\App;
+use Bulckens\ApiTools\Api;
 use Estimates\Models\Estimate;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,6 +11,10 @@ use Prophecy\Argument;
 class EstimateSpec extends ObjectBehavior {
 
     function let() {
+      $app = new App( 'test' );
+      $app->module( 'api', new Api());
+      $app->run();
+
       $this->beConstructedWith([
         'details' => [
           'email' => 'pddi@zwartopwit.be'
@@ -38,15 +44,21 @@ class EstimateSpec extends ObjectBehavior {
     }
 
 
-    // Send methods
+    // Save method
+    function it_can_be_saved() {
+      $this->save()->shouldBe( true );
+    }
+
+
+    // Send method
     function it_sends_an_email_using_the_mailer_api() {
-      
+      $this->send()->shouldBe( true );
     }
 
 
     // Store method
     function it_stores_the_uploaded_files_on_the_file_system() {
-
+      // TODO: grab uploaded files and store them in a specific location
     }
 
 
