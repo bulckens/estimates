@@ -15,4 +15,5 @@ test:
 production:
   <<: *generic
   mail:
-    to: 'offerte@zwartopwit.be'
+    to: 'w@zwartopwit.be'
+    #to: 'offerte@zwartopwit.be'
