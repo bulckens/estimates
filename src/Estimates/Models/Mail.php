@@ -17,6 +17,7 @@ class Mail extends Model {
     $this->data([
       'mail' => array_replace([
         'to' => App::get()->config( 'mail.to' )
+      , 'from' => App::get()->config( 'mail.from' )
       , 'subject' => "Offerteaanvraag van {$details['from']}"
       , 'language' => 'nl'
       ], $details )

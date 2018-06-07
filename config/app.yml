@@ -5,6 +5,7 @@ generic: &generic
     - view
   mail:
     to: 'w@zwartopwit.be'
+    from: 'w@zwartopwit.be'
 
 development:
   <<: *generic
@@ -14,6 +15,6 @@ test:
 
 production:
   <<: *generic
-  mail:
-    to: 'w@zwartopwit.be'
-    #to: 'offerte@zwartopwit.be'
+  #mail:
+  #  to: 'offerte@zwartopwit.be'
+  #  from: 'offerte@zwartopwit.be'

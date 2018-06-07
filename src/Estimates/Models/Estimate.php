@@ -60,13 +60,12 @@ class Estimate {
   public function send() {
     // create new mail instance
     $mail = new Mail([
-      'from' => $this->data['details']['email']
-    , 'text' => $this->compose()
+      'text' => $this->compose()
     ]);
 
     // send mail
     $response = $mail->post();
-    
+
     // detect successful
     return !! $response->attr( 'success' );
   }
