@@ -60,7 +60,8 @@ class Estimate {
   public function send() {
     // create new mail instance
     $mail = new Mail([
-      'text' => $this->compose()
+      'from' => $this->data['details']['email']
+    , 'text' => $this->compose()
     ]);
 
     // send mail
